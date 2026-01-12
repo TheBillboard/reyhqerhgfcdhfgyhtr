@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE 1 BILLION PIXELS PLUS HOMEPAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="payment-bar">
+        <span onclick="copy('912221034')">BINANCE UID: 912221034 (COPY)</span>
+        <span onclick="copy('TTapBkTqrDnzHbWzek6wSBUTcJKFmR8Ws6')">USDT (TRC20): TTapB...Ws6 (COPY)</span>
+    </div>
+
+    <div class="main-branding">
+        <p class="tagline">Would you like me</p>
+        <h1 class="canva-title">THE 1 BILLION PIXELS PLUS HOMEPAGE</h1>
+        <p class="price-tag">Fixed 200x200 Slot = $20 USD</p>
+    </div>
+
+    <div class="nav-controls">
+        <div class="social-icons">
+             <a href="https://wa.me/8801576940717"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA"></a>
+        </div>
+        <input type="number" id="searchSlot" placeholder="Slot # (1-25600)">
+        <button onclick="searchHome()">FIND SLOT</button>
+        <a href="order.html" class="buy-btn">BUY NOW</a>
+    </div>
+</div>
+
+<div id="view-viewport">
+    <div id="canvas-container">
+        <canvas id="fireCanvas"></canvas>
+        <canvas id="mainCanvas"></canvas>
+    </div>
+</div>
+
+<div id="info-section">
+    <div class="promo-box">
+        <h3>🚀 EXCLUSIVE PROMOTION</h3>
+        <p>Send Video/Photo to WhatsApp. We post on 3 Social Media platforms!</p>
+        <a href="https://wa.me/8801576940717" class="wa-link">Contact WhatsApp</a>
+    </div>
+</div>
+
+<div id="footer">
+    <p>THE 1 BILLION PIXELS PLUS HOMEPAGE © 2026 Kawsar Tew. All rights reserved.</p>
+    <p>I am not responsible for external content. Images featured are © of their respective owners.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
