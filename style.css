@@ -1,0 +1,40 @@
+body { 
+    margin: 0; 
+    /* ছবির মতো ডার্ক টিল গ্রেডিয়েন্ট */
+    background: radial-gradient(circle at center, #004d4d 0%, #001a1a 100%); 
+    color: #00ffcc;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+#header { background: rgba(0, 0, 0, 0.9); padding: 15px; text-align: center; border-bottom: 2px solid #00ffcc; }
+
+.canva-title {
+    font-size: 35px;
+    color: #00ffcc; /* টিল কালার */
+    text-shadow: 0 0 15px #00ffcc;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-weight: 900;
+}
+.canva-title:hover { transform: scale(1.05); color: #fff; }
+
+/* ফিক্সড এরিয়া ফ্রেম */
+#view-viewport {
+    width: 90%;
+    height: 600px; /* ফিক্সড উচ্চতা */
+    margin: 30px auto;
+    border: 4px solid #00ffcc;
+    background: #000;
+    position: relative;
+    overflow: hidden; /* বাইরে নাড়াচাড়া করা যাবে না */
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.3);
+}
+
+#canvas-container { position: absolute; cursor: grab; transform-origin: 0 0; }
+#canvas-container:active { cursor: grabbing; }
+
+canvas { display: block; }
+
+.wa-link { background: #00ffcc; color: #000; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+#footer { font-size: 11px; padding: 30px; color: #666; text-align: center; }
